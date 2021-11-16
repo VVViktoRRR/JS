@@ -55,6 +55,8 @@ let simpsons = [
         photo: 'https://upload.wikimedia.org/wikipedia/ru/9/9d/Maggie_Simpson.png'
     },
 ];
+//--------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------
 document.write(`<h2> template2.1 </h2>`)
 for (let i = 0; i < simpsons.length; i++) {
     const simpson = simpsons[i];
@@ -62,6 +64,8 @@ for (let i = 0; i < simpsons.length; i++) {
 NAME- ${simpson.name},  SURNAME-${simpson.surname},  AGE- ${simpson.age},  INFO - ${simpson.info } <img src="${simpson.photo}" alt="photo">
                     </div><hr>`)
 }
+//--------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------
 document.write(`<h2> template2.2 </h2>`)
 for (let i = 0; i < simpsons.length; i++) {
     const simpson = simpsons[i];
@@ -73,8 +77,10 @@ for (let i = 0; i < simpsons.length; i++) {
                          <img src="${simpson.photo}" alt="photo"></div><hr>`);
 }
 document.write(`<hr>`);
-
+//--------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------
 document.write(`<h2> template2.3 </h2>`);
+
 document.write(`<div>`);
 for (let i = 0; i < simpsons.length; i++)
 {const simpson = simpsons[i];
@@ -87,3 +93,35 @@ for (let i = 0; i < simpsons.length; i++)
 }
 document.write(`</div>`);
 document.write(`<hr>`);
+//--------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------
+document.write(`<h2> template3.1 </h2>`);
+let products = [
+    {
+        title: 'milk',
+        price: 22,
+        image: 'https://www.mcqueensdairies.co.uk/wp-content/uploads/2019/02/Mcqueens_1litre_whole_organic-300x300-3.jpg'
+    },
+    {
+        title: 'juice',
+        price: 27,
+        image: 'https://images-na.ssl-images-amazon.com/images/I/61jL2GCuKLL._SX679_PIbundle-24,TopRight,0,0_AA679SH20_.jpg'
+    },
+    {
+        title: 'tomato',
+        price: 47,
+        image: 'https://dictionary.cambridge.org/ru/images/thumb/tomato_noun_001_17860.jpg?version=5.0.74'
+    },
+    {
+        title: 'tea',
+        price: 15,
+        image: 'https://yogiproducts.com/wp-content/uploads/2009/03/YT-US-CAR-RelaxedMind-C23-202201-V2-3DFront_withGlow-300DPI-1.png'
+    },
+];
+for (let i = 0; i < products.length; i++) {
+    const product = products[i];
+    document.write(`<div>
+ <h3>${product.title}. Prise - ${product.price} UAN  </h3> 
+ <img src="${product.image}" width="400px" alt="photo">
+</div><hr>`)
+}
