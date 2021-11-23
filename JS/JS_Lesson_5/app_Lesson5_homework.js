@@ -88,12 +88,10 @@ document.write(`<hr><div><h4>- створити функцію яка прийм
                                 Для кожного об'єкту окремий блок.</h4></div>`);
 
 let objOutput = (obj)=>{
-        console.log(obj.id);
-        document.write(`<div><ul><h4>
+            document.write(`<div><ul><h4>
                              <li><div>${obj.id}</div></li>  
                              <li><div>${obj.name}</div></li>  
                              <li><div>${obj.age}</div></li>  
                        </h4></ul></div>`);
 }
-
 objOutput({id:1604, name:'Viktor', age:37});
