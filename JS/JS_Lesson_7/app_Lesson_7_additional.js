@@ -24,66 +24,42 @@
 //         bs: 'harness real-time e-markets'
 // }
 // }
-class Task1 {
-    constructor(id, name, username, email, address) {
-    this.id = id;
-    this.name = name;
-    this.username = username;
-    this.email = email;
-        this.address = address
-    this.address.street = address.street,
-    this.address.suite = address.suite,
-    this.address.sity = address.city,
-    this.address.zipcode = address.zipcode,
-    this.address.geo = address.geo
-  //   this.address = address
-  //       class address1 {
-  //       constructor(street, suite, city, zipcode) {
-  //         this.street = street;
-  //         this.suite = suite;
-  //         this.city = city;
-  //         this.zipcode = zipcode;
-  //     }
-  // }
-   }
+class Person {
+    constructor (id, name, username, email, phone, website, street, suite, city, zipcode, lat, ing, cName, catchPhrase, bs){
+        this.id = id;
+        this.name = name;
+        this.username = username;
+        this.email = email;
+        this.address = {};
+        this.address.street = street;
+        this.address.suite = suite;
+        this.address.city = city;
+        this.address.zipcode = zipcode;
+        this.address.suite = suite;
+        this.address.geo = {};
+        this.address.geo.lat = lat;
+        this.address.geo.ing = ing;
+        this.phone = phone;
+        this.website = website;
+        this.company = {};
+        this.company.name = cName;
+        this.company.catchPhrase = catchPhrase;
+        this.company.bs =  bs;
+    }
 }
-let proba = [
-    new Task1(7, 'Viktor', 'VVViktoRRR', 'qazxsw@ukr.net', 'Odessa', '' )
+let user = new Person (1,'Leanne Graham','Bret','Sincere@april.biz','1-770-736-8031 x56442','hildegard.org','Kulas Light','Apt. 556','Gwenborough','92998-3874', '-37.3159','81.1496','Romaguera-Crona','Multi-layered client-server neural-net', 'harness real-time e-markets');
+
+console.log('user: ', user);
+let Test = [
+    new Person(7, 'Viktor', 'VVViktoRRR', 'qazxsw@ukr.net',
+        '+380934226455', 'fWGG@EGWn.zzh', 'vodoprovodnaya', '50', 'Odessa',
+        '65007', '65.004', '78.845', 'logotip', 'ahUigi', 'KHIVHkhfihvciH')
 ]
-console.log(proba);
-
-
-// this.address = [
-//     this.address.street = address.street,
-//     this.address.suite = address.suite,
-//     this.address.sity = address.city,
-//     this.address.zipcode = address.zipcode,
-//     this.address.geo = address.geo
-// ]
-// {
-//     this.address.street = street;
-//     this.address.city = city;
-//     this.address.zipcode = zipcode;
-//     this.address.zipcode.geo = geo;
-//     {
-//         this.address.zipcode.geo.lat = lat;
-//         this.address.zipcode.geo.lng = lng;
-//     }
-// }
-// this.phone = phone;
-// this.website = website;
-// this.company = company;
-// {
-//     this.company.name = company.name;
-//     this.company.catchPhrase = company.catchPhrasee;
-//     this.company.bs = company.bs;
-// }
-
-// console.log(Task1);
+console.log(Test);
 
 // -  Створити функцію конструктор / клас  який описує об'єкт тегу
 // Поля :
-//     -назва тегу ()
+//  -назва тегу ()
 // - опис його дій
 // - масив з атрибутами (2-3 атрибути максимум)
 // Кожен атрибут описати як окремий який буде містити
