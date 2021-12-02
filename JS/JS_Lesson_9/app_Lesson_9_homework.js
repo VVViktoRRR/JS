@@ -100,10 +100,10 @@ for (const item of coursesAndDurationArray2) {
    itemDiv.classList.add('item');
    let h1 = document.createElement('h1');
    h1.innerText = `title: ${item.title}`;
-   h1.classList = 'heading';
+   h1.classList.add('heading');
    let p = document.createElement('p');
    p.innerText = `monthDuration: ${item.monthDuration}`;
-   p.classList = 'description';
+   p.classList.add('description');
 
 
     itemDiv.appendChild(h1);
