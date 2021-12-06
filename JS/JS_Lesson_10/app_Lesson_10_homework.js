@@ -1,7 +1,7 @@
 // - Создать произвольный елемент с id = text.
 // Используя JavaScript, сделайте так, чтобы при клике на кнопку исчезал элемент с id="text".
 let textDiv = document.createElement('div');
-textDiv.classList.add("id","=","test");
+textDiv.id = 'text';
 textDiv.style.width = '200px';
 textDiv.style.height = '200px';
 textDiv.style.background = 'black';
