@@ -48,14 +48,14 @@ document.body.appendChild(button);
 // - Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вміст ячеєк.
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 //  (Додатковачастина для завдання)
-
+let wrapDiv = document.createElement('div')
 let allDiv = document.createElement('div');
 allDiv.style.border = ' 2px solid black';
 allDiv.style.width = '850px';
 allDiv.style.height = '45';
 allDiv.style.background = 'silver';
 allDiv.style.marginTop = '50px';
-document.body.appendChild(allDiv);
+wrapDiv.appendChild(allDiv);
 let inputOne = document.createElement('input');
 inputOne.style.margin = '10px';
 allDiv.appendChild(inputOne);
@@ -95,10 +95,10 @@ buttonAll.onclick = function () {
         }
         elemDiv.appendChild(table);
     }
-    document.body.appendChild(elemDiv);
+    wrapDiv.appendChild(elemDiv);
     buttonClear.onclick = () => elemDiv.style.display = 'none';
       };
-
+document.body.appendChild(wrapDiv);
 //==================================================================================================================
 // - Сворити масив не цензцрних слів.
 //     Сворити інпут текстового типу.
