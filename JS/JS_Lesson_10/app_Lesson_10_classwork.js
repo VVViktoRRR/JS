@@ -74,7 +74,7 @@ buttonClear.innerText = 'Delete Table';
 buttonClear.style.marginLeft = '20px';
 allDiv.appendChild(buttonClear);
 
-buttonAll.onclick = function () {
+buttonAll.addEventListener('click', function add() {
     let elemDiv = document.createElement('div');
     createTable(elemDiv, `${inputTwo.value}`, `${inputOne.value}`);
     function createTable(content, cols, rows) {
@@ -97,7 +97,8 @@ buttonAll.onclick = function () {
     }
     wrapDiv.appendChild(elemDiv);
     buttonClear.onclick = () => elemDiv.style.display = 'none';
-      };
+    buttonAll.removeEventListener('click', add);
+});
 document.body.appendChild(wrapDiv);
 //==================================================================================================================
 // - Сворити масив не цензцрних слів.
