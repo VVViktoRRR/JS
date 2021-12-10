@@ -69,7 +69,6 @@ wrapDiv.style.paddingLeft = '5px';
 let form = document.createElement('form');
 let statusDiv = document.createElement('div');
 form.appendChild(statusDiv);
-
 statusDiv.style.display = 'flex';
 let statusP = document.createElement('p');
 statusDiv.appendChild(statusP);
@@ -105,25 +104,40 @@ outDiv.style.marginTop = '100px';
 outDiv.style.fontSize = '30px';
 form.appendChild(outDiv);
 
+
+
 buttonFilter.onclick = (e) => {
     e.preventDefault();
-    // let Age =()=>{
-    //         if(inputAge.checked){
-    //             return 29;
-    //         }
-    //     }
-    // let City = inputCity.checked;
+    if (inputAge.checked === true ) {
+    console.log(usersWithAddress.filter(item => item.age >= 29))
+   }
+}
 
-let Status = inputStatus.checked;
-    for (const user of usersWithAddress) {
-          if (user.age === Age()) {
-              console.log(`name : ${user.name} - ${user.age} - ${user.address.city} - ${user.status}`);
-                // outDiv.innerHTML = `name : ${user.name} - age: ${user.age} - city: ${user.address.city} - status: ${user.status}`;
-          } else if (user.age !== Age()){
-              console.log(`name : ${user.name} - ${user.age} - ${user.address.city} - ${user.status}`);
-          }
-        }
-    }
+// let Age = () => {
+//     if (inputAge.checked)
+//     return 29}
+// let Status = () => {
+//     if (inputStatus.checked)
+//     return false}
+// let City = () => {
+//     if ( inputCity.checked)
+//         return 'Kyiv'
+
+// for (const user of usersWithAddress) {
+//    if (user.status === Age ) {
+//        console.log(usersWithAddress.filter(user => user >= Age)) ;
+//    }
+//
+//   }
+//     console.log('parametra net')
+//  }
+
+// console.log(`name : ${user.name} - ${user.age} - ${user.address.city} - ${user.status}`);
+// if (checkbox.checked == true){          // если он отмечен
+//     console.log(array.filter(val => val >= 29)) ;  // вывести массив возраста старше 29 лет
+// }
+// }
+
 
 wrapDiv.appendChild(form);
 document.body.appendChild(wrapDiv);

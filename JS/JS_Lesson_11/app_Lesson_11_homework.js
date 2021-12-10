@@ -16,8 +16,8 @@ form1.appendChild(button1);
 
 button1.onclick =(e) => {
     e.preventDefault();
-    let outInfo = `name: ${inputName.value} - age: ${inputAge.value}`;
-
+    let outInfo = {name:`${inputName.value}`, age:`${inputAge.value}`};
+    console.log(typeof  outInfo);
     localStorage.setItem('outInfo', JSON.stringify(outInfo));
     console.log(outInfo);
 }

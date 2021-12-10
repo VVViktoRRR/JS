@@ -31,6 +31,7 @@ for (const user of users) {
         e.preventDefault();
 favoritesArr.push(` name: ${user.name},  age: ${user.age},  status: ${user.status}`);
         console.log(favoritesArr);
+        console.log(typeof  favoritesArr);
 localStorage.setItem('favoritesArr', JSON.stringify(favoritesArr));
     }
 }
