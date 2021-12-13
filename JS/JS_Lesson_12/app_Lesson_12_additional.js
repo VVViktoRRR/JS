@@ -84,12 +84,11 @@ commentsButton.onclick = (e) => {
         .then(comments => {
             for (const comment of comments) {
                 if (comment.postId === post.userId) {
-                    console.log(comment);
                     let commentDiv = document.createElement('div');
                     posDiv.appendChild(commentDiv);
                     commentDiv.style.width = '100%';
                     commentDiv.style.background = '#3498ca';
-                     commentDiv.innerHTML = `<b> id: </b> ${comment.id} <br>
+                    commentDiv.innerHTML = `<b> id: </b> ${comment.id} <br>
                                              <b> body: </b> ${comment.body}<hr>`;
                 }
 
