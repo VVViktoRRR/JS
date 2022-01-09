@@ -14,8 +14,8 @@ fetch('https://jsonplaceholder.typicode.com/posts')
     let divPost = document.createElement('div');
 
     divPost.style.border = '2px solid black';
-     divPost.style.margin = '2px';
-     divPost.style.padding = '5px';
+    divPost.style.margin = '2px';
+    divPost.style.padding = '5px';
     divPost.style.width = '18%';
     let userIdDiv = document.createElement('div');
     divPost.appendChild(userIdDiv);
